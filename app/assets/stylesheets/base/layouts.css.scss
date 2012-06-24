@@ -11,15 +11,64 @@
 		@include clearfix;
 
 		>.main_content{
-			width: 700px;
+			width: 600px;
 			min-height: 800px;
 			float: left;
-			background: url("layouts/bg_main_content.png") repeat 0 0;
+			background: url("layouts/bg_transparent_white.png") repeat 0 0;
 			@include box-shadow(0 0 5px 2px hsla(0, 0%, 0%, 0.08));
 		}
 		>.side_content{
-			width: 200px;
+			width: 270px;
 			float: right;
+
+			header{		
+				h1{
+					margin: 40px 0;
+				}	
+			}
+
+			nav{
+				.nav_module{
+					background: url("layouts/bg_transparent_white.png") repeat 0 0;
+					margin: 0 0 20px;
+					padding: 10px;
+					border: solid 2px #fff;
+					@include border-radius(4px);
+
+					h1{
+						margin-bottom: 15px;
+						padding-bottom: 8px;
+						@include separator(bottom);
+					}
+					.more_link{
+						@include icn_arrow;
+						text-align: right;
+						margin-top: 15px;
+					}
+
+					&.nav_profile{
+						figure{
+							float: left;
+							margin: 0 10px 10px 0;
+
+							img{
+								border: solid 1px #eef7fb;
+							}
+						}
+						.name{
+							font-weight: bold;
+							line-height: 1.75;
+						}
+						.catch{
+							line-height: 1.75;
+						}
+						.description{
+							clear: left;
+							line-height: 1.75;
+						}
+					}
+				}
+			}
 		}
 	}
 }

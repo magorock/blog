@@ -1,6 +1,9 @@
 .side_content
 	header
-		h1 = image_tag "layout/side_content/logo.png", :alt => ""
+		h1 = image_tag "layouts/logo.png", :alt => ""
 
 	nav
 		= render "application/nav_module/nav_profile"
+		= render "application/nav_module/nav_category"
+		= render "application/nav_module/nav_archive"
+		= render "application/nav_module/nav_tag"

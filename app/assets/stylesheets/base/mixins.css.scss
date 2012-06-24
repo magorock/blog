@@ -11,3 +11,15 @@
 		}	
 	}
 }
+
+@mixin separator($y){
+	background: url("common/bdr_separator.png") repeat-x left $y;
+	zoom: 1
+}
+
+@mixin icn_arrow{	
+	a{
+		background: url("common/icn_arrow.png") no-repeat 0 50%;
+		padding-left: 13px;
+	}
+}

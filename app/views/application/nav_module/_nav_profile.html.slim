@@ -1,2 +1,14 @@
-section.nav_list
-	h1 =image_tag "layout/side_content/h_profile.png", :alt => "プロフィール"
+section.nav_module.nav_profile
+	h1 =image_tag "layouts/nav_module/h_profile.png", :alt => "プロフィール"
+
+	figure = image_tag "http://placehold.it/70x70", :alt => "プロフィール画像"
+	p.name 三上絵利菜
+	p.catch @skyguild<br />三度の飯より酒が好き
+	p.description 
+		|FICC inc.所属 Webディベロッパ
+		br
+		|日本電子専門学校Webデザイン科卒
+		br
+		|SetucoCMSプロジェクトリーダー
+
+	aside.more_link = link_to "もうちょい読む", "#"
