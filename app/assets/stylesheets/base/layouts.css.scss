@@ -45,6 +45,26 @@
 						text-align: right;
 						margin-top: 15px;
 					}
+					.tree_list{
+						margin-bottom: 10px;
+
+						li{
+							margin-bottom: 7px;
+							@include icn_arrow;
+						}
+						ul{
+							margin: 4px 0 0 15px;
+
+							li{
+								margin-bottom: 4px;
+
+								a{
+									background: url("common/icn_border.png") no-repeat 0 50%;
+									padding-left: 13px;
+								}
+							}
+						}
+					}
 
 					&.nav_profile{
 						figure{
