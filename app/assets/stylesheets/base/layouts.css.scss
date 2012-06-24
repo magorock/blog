@@ -1,3 +1,25 @@
 /* ----------- */
 /* base layout */
 /* ----------- */
+
+.content {
+	background: url("layouts/bg_stripe_l.png") repeat-x 0 0;
+
+	>.inner{
+		margin: 0 auto;
+		width: 900px;
+		@include clearfix;
+
+		>.main_content{
+			width: 700px;
+			min-height: 800px;
+			float: left;
+			background: url("layouts/bg_main_content.png") repeat 0 0;
+			@include box-shadow(0 0 5px 2px hsla(0, 0%, 0%, 0.08));
+		}
+		>.side_content{
+			width: 200px;
+			float: right;
+		}
+	}
+}

@@ -6,7 +6,7 @@ html
     = javascript_include_tag "application"
     = csrf_meta_tags
   body id="#{params[:controller]}" class="#{params[:action]}"
-  	.wrapper
+  	.content : .inner
   		.main_content
 		    = yield
 
