@@ -1,0 +1,24 @@
+/* ------------- */
+/* mixin modules */
+/* ------------- */
+
+/* clearfix */
+@mixin clearfix{
+	zoom:1;
+	
+	&:after{
+		content: ""; 
+		display: block; 
+		clear: both;
+	}
+}
+
+@mixin opacity($v){
+	&:hover{
+		img, &[type = "image"]{
+			opacity: $v;
+			-ms-filter: "alpha(opacity=#{$v * 100})"; /* IE 8 */
+			filter:alpha(opacity=#{$v * 100}); /* IE lt 8 */
+		}	
+	}
+}
