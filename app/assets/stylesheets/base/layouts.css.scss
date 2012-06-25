@@ -87,6 +87,35 @@
 							line-height: 1.75;
 						}
 					}
+
+					&.nav_tag{
+						.tag_cloud{
+
+							li{
+								display: inline-block;
+								margin: 0 0 5px 5px;
+
+								&.lv5{
+									font-weight: bold;
+									font-size: 18px;
+								}
+								&.lv4{
+									font-weight: bold;
+									font-size: 16px;
+								}
+								&.lv3{
+									font-size: 14px;
+								}
+								&.lv2{
+									font-size: 12px;
+								}
+								&.lv1{
+									font-size: 10px;
+								}
+							}
+						}
+					}
+
 				}
 			}
 		}
