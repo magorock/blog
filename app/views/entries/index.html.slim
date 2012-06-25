@@ -2,7 +2,7 @@
 	article
 		header
 			p.date : time = entry.created_at.strftime("%Y/%m/%d")
-			h1 = entry.title
+			h1 = link_to entry.title, entry
 			aside.social_btns
 				ul
 					li Facebook

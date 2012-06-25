@@ -16,6 +16,13 @@
 			float: left;
 			background: url("layouts/bg_transparent_white.png") repeat 0 0;
 			@include box-shadow(0 0 5px 2px hsla(0, 0%, 0%, 0.08));
+			position: relative;
+
+			>footer{
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+			}
 		}
 		>.side_content{
 			width: 270px;
