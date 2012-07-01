@@ -48,16 +48,22 @@
 						@include separator(bottom);
 					}
 					.more_link{
-						@include icn_arrow;
 						text-align: right;
 						margin-top: 15px;
+
+						a{
+							@include icn_arrow;
+						}
 					}
 					.tree_list{
 						margin-bottom: 10px;
 
 						li{
 							margin-bottom: 7px;
-							@include icn_arrow;
+
+							a{
+								@include icn_arrow;
+							}
 						}
 						ul{
 							margin: 4px 0 0 15px;

@@ -13,7 +13,9 @@
 		.body
 			p = entry.body
 
-			aside.more_read = link_to "続きを読む", entry
+			aside.more_read
+				= link_to entry do
+					span 続きを読む
 
 		footer
 			dl.category

@@ -18,11 +18,68 @@
 		}
 
 		>.body{
+			margin-bottom: 25px;
+
+			.more_read{
+				text-align: center;
+				background: url("entries/bg_transparent_gray.png") repeat 0 0;
+
+				&:hover{
+					background: url("entries/bg_no_transparent_gray.png") repeat 0 0;;
+				}
+
+				a{
+					display: block;
+					padding: 10px 0;
+					
+					span{
+						@include icn_arrow;
+					}
+				}
+			}
 
 		}
 
 		>footer{
+			@include clearfix;
 
+			dl{
+				@include clearfix;
+				float: left;
+
+				dt, dd{
+					float:left;
+				}
+				dt{
+					margin-left: 15px;
+					margin-right: 5px;
+					width: 20px;
+					height: 20px;
+
+					&:first-child + dd{
+						margin-left: 0;
+					}
+				}
+				dd{
+					margin-left: 8px;
+					margin-top: 2px;
+				}
+
+				&.category{
+					dt{
+						margin-left: 0;
+					}
+				}
+
+				&.tag{
+
+				}
+
+				&.comment{
+
+				}
+
+			}
 		}
 
 	}

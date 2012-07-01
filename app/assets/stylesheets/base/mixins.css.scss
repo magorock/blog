@@ -3,14 +3,19 @@
 /* ------------- */
 
 @mixin opacity($v){
+	opacity: $v;
+	-ms-filter: "alpha(opacity=#{$v * 100})"; /* IE 8 */
+	filter:alpha(opacity=#{$v * 100}); /* IE lt 8 */
+}
+
+@mixin img_opacity($v){
 	&:hover{
 		img, &[type = "image"]{
-			opacity: $v;
-			-ms-filter: "alpha(opacity=#{$v * 100})"; /* IE 8 */
-			filter:alpha(opacity=#{$v * 100}); /* IE lt 8 */
+			@include opacity($v);
 		}	
 	}
 }
+
 
 @mixin separator($y){
 	background: url("common/bdr_separator.png") repeat-x left $y;
@@ -18,8 +23,6 @@
 }
 
 @mixin icn_arrow{	
-	a{
-		background: url("common/icn_arrow.png") no-repeat 0 50%;
-		padding-left: 13px;
-	}
+	background: url("common/icn_arrow.png") no-repeat 0 50%;
+	padding-left: 13px;
 }
