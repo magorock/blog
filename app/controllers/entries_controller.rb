@@ -6,4 +6,10 @@ class EntriesController < InheritedResources::Base
     @category = Category.find(params[:id])
     @entries = @category.entries
   end
+  def tag
+    return redirect_to collection_url unless params[:id]
+
+    @tag = Tag.find(params[:id])
+    @entries = @tag.entries
+  end
 end
