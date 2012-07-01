@@ -1,4 +1,10 @@
 #entries{
+	.blank{
+		padding: 60px;
+		text-align: center;
+		@include separator(bottom);
+	}
+
 	article{
 		padding: 45px 20px 30px;
 		@include separator(bottom);
@@ -180,6 +186,7 @@
 				line-height: 0;
 				padding-top: 30px;
 				text-shadow: 1px 1px 1px #888;
+				font-weight: normal;
 			}
 		}
 	}

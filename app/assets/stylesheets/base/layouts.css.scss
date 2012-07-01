@@ -32,7 +32,9 @@
 			header{		
 				h1{
 					margin: 40px 0;
-				}	
+
+					@include img_opacity(0.8)
+				}
 			}
 
 			nav{

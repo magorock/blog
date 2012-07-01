@@ -1,3 +1,3 @@
 class Entry < ActiveRecord::Base
-	has_one :category
+	belongs_to :category
 end

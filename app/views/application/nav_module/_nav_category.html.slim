@@ -2,11 +2,6 @@ section.nav_module
 	h1 =image_tag "layouts/nav_module/h_category.png", :alt => "カテゴリー"
 
 	ul.tree_list
-		li = link_to "カテゴリー名 (10)", "#"
-		li = link_to "カテゴリー名 (10)", "#"
-		li = link_to "カテゴリー名 (10)", "#"
-		li
-			= link_to "カテゴリー名 (10)", "#"
-			ul
-				li = link_to "カテゴリー名 (10)", "#"
-				li = link_to "カテゴリー名 (10)", "#"
+		- Category.all.each do |category|
+			- if category.entries.presence
+				li = link_to "#{category.name} (#{category.entries.count})", category_entries_path(:id => category.id)

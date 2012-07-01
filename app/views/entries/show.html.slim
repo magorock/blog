@@ -23,7 +23,7 @@ article
 		.label_list
 			dl.category
 				dt = image_tag "entries/icn_category.png", :alt => "カテゴリー"
-				dd = link_to "カテゴリー名", "#"
+				dd = link_to @entry.category.name, category_entries_path(:id => @entry.category.id)
 
 			dl.tag
 				dt = image_tag "entries/icn_tag.png", :alt => "タグ"
