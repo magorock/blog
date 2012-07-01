@@ -1,7 +1,7 @@
 article
 	header
 		p.date : time = @entry.created_at.strftime("%Y/%m/%d")
-		h1 = link_to @entry.title, @entry
+		h1 :span = @entry.title
 		aside.social_btns
 			ul
 				li.hatena
