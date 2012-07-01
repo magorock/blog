@@ -38,3 +38,4 @@ end
 gem "slim-rails", "0.2.1"
 gem 'bourbon', '1.4.0'
 gem 'redcarpet', '2.1.1'
+gem 'inherited_resources', '1.3.1'
