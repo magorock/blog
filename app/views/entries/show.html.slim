@@ -20,19 +20,20 @@ article
 				li.facebook_like
 
 	footer
-		dl.category
-			dt = image_tag "entries/icn_category.png", :alt => "カテゴリー"
-			dd = link_to "カテゴリー名", "#"
+		.label_list
+			dl.category
+				dt = image_tag "entries/icn_category.png", :alt => "カテゴリー"
+				dd = link_to "カテゴリー名", "#"
 
-		dl.tag
-			dt = image_tag "entries/icn_tag.png", :alt => "タグ"
-			dd = link_to "タグ名", "#"
-			dd = link_to "タグ名", "#"
-			dd = link_to "タグ名", "#"
+			dl.tag
+				dt = image_tag "entries/icn_tag.png", :alt => "タグ"
+				dd = link_to "タグ名", "#"
+				dd = link_to "タグ名", "#"
+				dd = link_to "タグ名", "#"
 
-		dl.comment
-			dt = image_tag "entries/icn_comment.png", :alt => "コメント"
-			dd = link_to "0コメント", "#"
+			dl.comment
+				dt = image_tag "entries/icn_comment.png", :alt => "コメント"
+				dd = link_to "0コメント", "#"
 
 		aside.link_bar
 			= link_to collection_url do

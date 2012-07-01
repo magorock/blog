@@ -111,45 +111,42 @@
 		}
 
 		>footer{
-			@include clearfix;
 
-			dl{
+			.label_list{
 				@include clearfix;
-				float: left;
 
-				dt, dd{
-					float:left;
-				}
-				dt{
-					margin-left: 15px;
-					margin-right: 5px;
-					width: 20px;
-					height: 20px;
+				dl{
+					@include clearfix;
+					float: left;
 
-					&:first-child + dd{
-						margin-left: 0;
+					dt, dd{
+						float:left;
 					}
-				}
-				dd{
-					margin-left: 8px;
-					margin-top: 2px;
-				}
-
-				&.category{
 					dt{
-						margin-left: 0;
+						margin-left: 15px;
+						margin-right: 5px;
+						width: 20px;
+						height: 20px;
+
+						&:first-child + dd{
+							margin-left: 0;
+						}
 					}
-				}
+					dd{
+						margin-left: 8px;
+						margin-top: 2px;
+					}
 
-				&.tag{
-
-				}
-
-				&.comment{
+					&.category{
+						dt{
+							margin-left: 0;
+						}
+					}
 
 				}
 
 			}
+
 		}
 
 	}
