@@ -27,9 +27,11 @@ article
 
 			dl.tag
 				dt = image_tag "entries/icn_tag.png", :alt => "タグ"
-				dd = link_to "タグ名", "#"
-				dd = link_to "タグ名", "#"
-				dd = link_to "タグ名", "#"
+				- if @entry.tags.presence
+					- @entry.tags.each do |tag|
+						dd = link_to tag.name, tag_entries_path(:id => tag.id)
+				- else
+					dd なし
 
 			dl.comment
 				dt = image_tag "entries/icn_comment.png", :alt => "コメント"
