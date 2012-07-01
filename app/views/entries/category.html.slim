@@ -1,0 +1,37 @@
+header
+	h1 #{@category.name}のエントリー一覧
+
+- @entries.each do |entry|
+	article
+		header
+			p.date : time = entry.created_at.strftime("%Y/%m/%d")
+			h1 = link_to entry.title, entry
+			aside.social_btns
+				ul
+					li.hatena
+					li.tweet
+					li.google_plusone
+					li.facebook_like
+
+		.body
+			.markdown = markdown(entry.body)
+
+			aside.link_bar
+				= link_to entry do
+					span 続きを読む
+
+		footer
+			.label_list
+				dl.category
+					dt = image_tag "entries/icn_category.png", :alt => "カテゴリー"
+					dd = link_to "カテゴリー名", "#"
+
+				dl.tag
+					dt = image_tag "entries/icn_tag.png", :alt => "タグ"
+					dd = link_to "タグ名", "#"
+					dd = link_to "タグ名", "#"
+					dd = link_to "タグ名", "#"
+
+				dl.comment
+					dt = image_tag "entries/icn_comment.png", :alt => "コメント"
+					dd = link_to "0コメント", "#"
