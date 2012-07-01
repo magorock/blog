@@ -4,21 +4,54 @@
 		@include separator(bottom);
 
 		>header{
+			margin-bottom: 35px;
+
 			.date{
 			}
 			h1{
 				font-size: 18px;
 				font-weight: normal;
-				margin: 5px 0 15px;
+				margin: 5px 0 20px;
+				line-height: 1.3;
 
 				a{
 					color: $head;
+					text-decoration: none;
+
+					&:hover{
+						color: $base;
+					}
 				}
 			}
+
+			.social_btns{
+				height: 20px;
+
+				ul{
+					@include clearfix;
+
+					li{
+						float: left;
+						padding-right: 15px;
+
+						&.hatena{
+							width: 50px;
+						}
+						&.tweet{
+							width: 90px;
+						}
+						&.google_plusone{
+							width: 60px;
+						}
+					}
+				}
+			}
+
 		}
 
 		>.body{
 			margin-bottom: 25px;
+
 
 			.more_read{
 				text-align: center;
