@@ -34,9 +34,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  reconnect: false
-  database: blog_production
-  pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  username: sqale_1c9324030f
+  password: f05818ad4c58fb6588e702b14f8e8bc817b0fa7da6e9d4a1
+  database: sqale_1c9324030f
+  host: mysql001.sqale.jp
