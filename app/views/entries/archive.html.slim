@@ -1,0 +1,9 @@
+header
+	h1 月別アーカイブ
+
+- @entry_months.sort.each do |month, entries|
+	h2 #{month.strftime('%Y年%m月')} のエントリー
+	ul
+	- entries.each do |entry|
+		li = link_to entry.title, entry
+

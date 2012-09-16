@@ -3,6 +3,7 @@ Blog::Application.routes.draw do
 		collection do
 			get :category
 			get :tag
+			get :archive
 		end
   end
 
