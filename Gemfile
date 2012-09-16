@@ -39,3 +39,5 @@ gem "slim-rails", "0.2.1"
 gem 'bourbon', '1.4.0'
 gem 'redcarpet', '2.1.1'
 gem 'inherited_resources', '1.3.1'
+gem 'activeadmin', '0.5.0'
+gem "meta_search",    '>= 1.1.0.pre'
