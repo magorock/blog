@@ -8,4 +8,4 @@ section.nav_module
 		- @entry_months.sort.each do |month, entries|
 			li = link_to "#{month.strftime('%Y年%m月')} (10)", "#"
 		
-	aside.more_link = link_to "もうちょい読む", "#"
+	aside.more_link = link_to "もうちょい読む", archive_entries_path
